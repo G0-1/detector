@@ -2,10 +2,10 @@ package main
 
 import (
 	"bytes"
+	"detector/detector"
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"prj1/detector"
 	"strconv"
 )
 
@@ -18,8 +18,6 @@ var (
 
 type Server struct {
 	Host string
-
-	//Dr *Detector
 }
 
 func NewServer() (s *Server) {
